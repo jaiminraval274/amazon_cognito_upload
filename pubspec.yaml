@@ -1,6 +1,6 @@
 name: amazon_cognito_upload
 description: The amazon_cognito_upload package is a Dart library designed to simplify and streamline the process of uploading files to Amazon Cognito, a robust and secure cloud service offered by Amazon Web Services (AWS). This package is particularly useful for developers working on Dart and Flutter projects who need to integrate file upload functionality with Amazon Cognito authentication.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/jaiminraval274/amazon_cognito_upload.git
 
 environment:
