@@ -9,3 +9,7 @@
 ## 0.0.3
 
 * Fix file upload function.
+
+## 0.0.4
+
+* Fix file upload function.
