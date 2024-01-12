@@ -58,8 +58,7 @@ class AWSWebClient {
       debugPrint('S3UploadRequest : ${res.request}');
       var response = await http.Response.fromStream(res);
       print('s3 statusCode :${response.statusCode}');
-      var data = json.decode(response.body);
-      print('s3Bucket response :$data');
+      print('$fileName uploaded to s3Bucket');
     } catch (e) {
       print(e.toString());
     }
