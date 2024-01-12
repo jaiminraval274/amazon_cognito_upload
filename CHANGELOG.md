@@ -5,3 +5,7 @@
 ## 0.0.2
 
 * Fix file upload function and added all platform support.
+
+## 0.0.3
+
+* Fix file upload function.

@@ -1,4 +1,8 @@
-//part of 'cognito_import.dart';
+/**
+ * Created by Jaimin on 12/01/24.
+ */
+library amazon_cognito_upload;
+
 import 'dart:convert';
 
 import 'package:amazon_cognito_identity_dart_2/sig_v4.dart';
@@ -6,7 +10,7 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
 class AWSWebClient {
-  void uploadData({
+  static void uploadData({
     required String s3UploadUrl,
     required String s3SecretKey,
     required String s3Region,
