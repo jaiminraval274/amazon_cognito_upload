@@ -28,11 +28,11 @@ final awsClient = AWSWebClient();
 
 void uploadFile() {
   awsClient.uploadFile(
-    S3_UPLOAD_URL: '', //s3 bucket url like : https://yourbucket name.s3.region.amazonaws.com/
-    S3_SECRET_KEY: '',
-    S3_REGION: '',
-    S3_BUCKET: '',
-    S3_ACCESS_KEY: '',
+    s3UploadUrl: '', //s3 bucket url like : https://yourbucket name.s3.region.amazonaws.com/
+    s3SecretKey: '',
+    s3Region: '',
+    s3AccessKey: '',
+    s3BucketName: '',
     folderName: '',
     fileName: '',
     filebytes: '',
