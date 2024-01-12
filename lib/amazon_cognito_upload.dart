@@ -1,6 +1,3 @@
-/**
- * Created by Jaimin on 12/01/24.
- */
 library amazon_cognito_upload;
 
 import 'dart:convert';
