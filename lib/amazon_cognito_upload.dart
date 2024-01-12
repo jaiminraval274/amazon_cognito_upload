@@ -10,7 +10,9 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
 class AWSWebClient {
-  static void uploadData({
+  const AWSWebClient();
+
+  static void uploadFile({
     required String s3UploadUrl,
     required String s3SecretKey,
     required String s3Region,

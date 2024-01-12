@@ -24,10 +24,8 @@ Super simple to use
 
 import 'package:amazon_cognito_upload/amazon_cognito_upload.dart';
 
-final awsClient = AWSWebClient();
-
 void uploadFile() {
-  awsClient.uploadFile(
+  AWSWebClient..uploadFile(
     s3UploadUrl: '', //s3 bucket url like : https://yourbucket name.s3.region.amazonaws.com/
     s3SecretKey: '',
     s3Region: '',
@@ -35,7 +33,7 @@ void uploadFile() {
     s3BucketName: '',
     folderName: '',
     fileName: '',
-    filebytes: '',
+    fileBytes: '',
   );
 }
 ```
