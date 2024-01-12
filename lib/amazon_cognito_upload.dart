@@ -6,7 +6,7 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
 class AWSWebClient {
-  dynamic uploadData({
+  void uploadData({
     required String s3UploadUrl,
     required String s3SecretKey,
     required String s3Region,
@@ -34,8 +34,8 @@ class AWSWebClient {
         filename: fileName);
     final policy = Policy.fromS3PresignedPost('$folderName/$fileName',
         s3BucketName, s3AccessKey, 15, length, s3Region);
-    final key = SigV4.calculateSigningKey(
-        s3SecretKey, policy.datetime, s3Region, 's3');
+    final key =
+        SigV4.calculateSigningKey(s3SecretKey, policy.datetime, s3Region, 's3');
     final signature = SigV4.calculateSignature(key, policy.encode());
     req.headers.addAll(headers);
     req.files.add(multipartFile);
@@ -56,7 +56,6 @@ class AWSWebClient {
       print('s3Bucket response :$data');
     } catch (e) {
       print(e.toString());
-      return e;
     }
   }
 }
