@@ -13,3 +13,7 @@
 ## 0.0.4
 
 * Fix file upload function.
+
+## 0.0.5
+
+* Minor fixis.
